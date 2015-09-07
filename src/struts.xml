@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+
+	<package name="default" namespace="/" extends="hibernate-default">
+		<action name="saveOrUpdateSchool" method="saveOrUpdate" class="com.auschools.school.action.SchoolAction">
+			<result name="success" type="redirect">listSchool</result>
+		</action>
+		<action name="listSchool" method="list" class="com.auschools.school.action.SchoolAction">
+			<result name="success">/registerSchool.jsp</result>
+		</action>
+		<action name="editSchool" method="edit" class="com.auschools.school.action.SchoolAction">
+			<result name="success">/registerSchool.jsp</result>
+		</action>
+		<action name="deleteSchool" method="delete" class="com.auschools.school.action.SchoolAction">
+			<result name="success" type="redirect">listSchool</result>
+		</action>
+	</package>
+	
+</struts>

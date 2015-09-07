@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+.content {
+font-family: sans-serif;
+font-size: small;
+}
+
+.schoolTable {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+}
+
+.schoolTable td {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+}
+
+.schoolTable th {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+	background-color: rgb(255, 255, 255);
+}
+
+.schoolForm {
+	border: 1px #000 dotted;
+}
+
+.schoolListing {
+	border: 1px #000 dotted;
+}
+
+.odd {
+background-color: #F0FCFF;
+}
+
+.even {
+background-color: #B2E6F2;
+}

@@ -1,0 +1,13 @@
+﻿#
+# Structure for table "schools"
+#
+
+DROP TABLE IF EXISTS `schools`;
+CREATE TABLE `schools` (
+  `SCHOOL_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `SCHOOL_NAME` varchar(255) DEFAULT NULL,
+  `SCHOOL_AREA` varchar(255) DEFAULT NULL,
+  `SCHOOL_YEAR` varchar(4) DEFAULT NULL,
+  `SCHOOL_PRIVATE` bit(1) NOT NULL DEFAULT b'0',
+  PRIMARY KEY (`SCHOOL_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
